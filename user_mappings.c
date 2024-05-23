@@ -7,9 +7,12 @@ int64_t mapEventKeys(int64_t keyWithModifiers){
 		case ALT+TAB: return META+TAB; // switch active window
 		case CTRL+C: return META+C; // copy
 		case CTRL+V: return META+V; // paste
+		case CTRL+X: return META+X; // cut
+		case CTRL+S: return META+S; // save
 		case CTRL+F: return META+F; // find
 		case CTRL+A: return META+A; // select all
-		case CTRL+Z: return META+Z; // cancel
+		case CTRL+Z: return META+Z; // undo
+		case CTRL+Y: return META+Y; // redo
 		case CTRL+W: return META+W; // close tab
 		case FN+F5: return META+R; // refresh
 		case HOME: return CTRL+LEFT; // go to line start
